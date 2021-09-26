@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Técnica David Perujo</title>
+</head>
+<body>
+    <h1>INFORMACION HARRY POTTER</h1>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Buscar por titulo" id="busqueda" onkeyup="filtro()" >
+    </div>
+    <table class="table table-striped" id="tabla">
+        <tr>
+            <th>Titulo</th>
+            <th>IBMId</th>
+            <th>Año</th>
+            <th>Valoracion (1-5)</th>
+        </tr>
+        <tr>
+            <td id="titulo"></td>
+            <td id="ID"></td>
+            <td id="Ano"></td>
+            <td>
+                <input type="number" id="valoracion" min="1" max="5">
+            </td>
+        </tr>
+      </table>
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="controller.js"></script>
+</html>
